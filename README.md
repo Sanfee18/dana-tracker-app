@@ -1,7 +1,6 @@
 # Dana Tracker App
----
 ## Motivación 
-Esta aplicación nace de la impotencia propia y colectiva del pueblo de Valencia ante la falta de verdad.
+Esta aplicación nace de la impotencia propia ante la falta de verdad.
 
 ## Principal problema
 El principal problema al que me he enfrentado al crear una aplicación así es evitar que los usuarios puedan introducir información falsa que desvirtue la mínima credibilidad que puede tener una página como esta. No busco que sea una fuente de verdad, pero si de orientación.
@@ -9,14 +8,16 @@ El principal problema al que me he enfrentado al crear una aplicación así es e
 #### Medidas tomadas
 Evitar que una persona añada afectados inventados no se si podría llegar a ser posible, pero poder evitar que alguien se haga pasar por otra persona si es conocedor de los datos personales solicitados si que sería posible gracias a la verificación SMS (que todavía está en proceso de añadirse).
 
-Si alguien tiene ideas sobre como evitar la información falsa que no dude en comentarlo. Por mi parte he añadido Google Recaptcha, un comprobador de formato de DNI/NIE y la base de datos está estructurada de tal forma que cada afectado añadido va ligado a la persona que lo añadió, la cual tuvo que identificarse con anterioridad usando sus datos personales.
+Si alguien tiene ideas sobre como evitar la información falsa que no dude en comentarlo. 
+
+Por mi parte he añadido Google Recaptcha, un comprobador de formato de DNI/NIE y la base de datos está estructurada de tal forma que cada afectado añadido va ligado a la persona que lo añadió, la cual tuvo que identificarse con anterioridad usando sus datos personales.
 
 ---
 # Procedimiento de la página
 La página web está compuesta de las siguientes páginas:
 
 ## Página principal
-Página principal donde se muestra la cifra total de fallecidos y desaparecidos, la tabla correspondiente con los afectados, y dos botones: uno para redirigir al usuario a la página de las ayudas oficiales de la ATV, y un segundo botón con el que añadir afectados.
+Página principal donde se muestra la cifra total de fallecidos y desaparecidos, la tabla correspondiente con los afectados, y dos botones: uno para redirigir al usuario a la página de las [ayudas oficiales de la ATV](https://atv.gva.es/es/dana2024), y un segundo botón con el que añadir afectados.
 
 ![Pagina Principal](img/Pagina1.png)
 
