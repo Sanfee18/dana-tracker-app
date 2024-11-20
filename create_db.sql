@@ -1,0 +1,26 @@
+CREATE DATABASE dana_valencia;
+
+USE dana_valencia;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellidos VARCHAR(150) NOT NULL,
+    dni VARCHAR(10) UNIQUE NOT NULL,
+    codigo_postal VARCHAR(5) NOT NULL,
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE afectados (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(100) NOT NULL,
+    dni VARCHAR(10) UNIQUE NOT NULL,
+    edad INT NOT NULL,
+    sexo ENUM('MASCULINO', 'FEMENINO', 'OTRO') DEFAULT 'OTRO' NOT NULL,
+    municipio VARCHAR(100) NOT NULL,
+    estado ENUM('DESAPARECIDO', 'FALLECIDO') DEFAULT 'DESAPARECIDO' NOT NULL,
+    date_added TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES usuarios(id)
+);
