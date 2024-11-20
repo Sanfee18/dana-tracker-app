@@ -7,9 +7,9 @@ Esta aplicación nace de la impotencia propia y colectiva del pueblo de Valencia
 El principal problema al que me he enfrentado al crear una aplicación así es evitar que los usuarios puedan introducir información falsa que desvirtue la mínima credibilidad que puede tener una página como esta. No busco que sea una fuente de verdad, pero si de orientación.
 
 #### Medidas tomadas
-Evitar que una persona añada afectados inventados no se si podría llegar a ser posible, pero poder evitar que alguien se haga pasar por otra persona si es conocedor de los datos personales solicitados si que sería posible gracias a la verificación SMS (que todavía está en proceso de añadirse).\
+Evitar que una persona añada afectados inventados no se si podría llegar a ser posible, pero poder evitar que alguien se haga pasar por otra persona si es conocedor de los datos personales solicitados si que sería posible gracias a la verificación SMS (que todavía está en proceso de añadirse).
 
-Si alguien tiene ideas sobre como evitar la información falsa que no dude en comentarlo. Por mi parte he añadido Google Recaptcha, un comprobador de formato de DNI/NIE y la base de datos está estructurada de tal forma que cada afectado añadido va ligado a la persona que lo añadió, la cual tuvo que identificarse con anterioridad usando sus datos personales. \ 
+Si alguien tiene ideas sobre como evitar la información falsa que no dude en comentarlo. Por mi parte he añadido Google Recaptcha, un comprobador de formato de DNI/NIE y la base de datos está estructurada de tal forma que cada afectado añadido va ligado a la persona que lo añadió, la cual tuvo que identificarse con anterioridad usando sus datos personales.
 
 ---
 # Procedimiento de la página
@@ -30,10 +30,10 @@ Esta página se divide en dos partes: una primera donde el usuario es mostrado u
 ## Datos personales de los afectados
 Esta es la úlima página, donde el usuario puede introducir los datos de los afectados, pudiendo añadir cuantos sean necesarios.
 
->[!NOTE]
-> Se piden más datos de los mostrados en la tabla de la página principal por si fueran necesarios para algún estudio sobre la catástrofe.
-
 ![Datos Afectados](img/Pagina3.png)
+
+>[!NOTE]
+> Se piden más datos de los mostrados en la tabla de la página principal por si fueran necesarios para algún estudio sobre la catástrofe por parte del gobierno o las instituciones pertinentes.
 
 ---
 # Ejecutar la aplicación
@@ -59,7 +59,7 @@ php -S localhost:8000
 
 ---
 # TODO
-- [] Añadir verificación SMS para el login de usuarios
-- [] Permitir modificar desaparecido -> fallecido
-- [] Hacer la página más responsive para dispositivos móviles
-- [] Dockerizar la aplicación
+- [ ] Añadir verificación SMS para el login de usuarios
+- [ ] Permitir modificar desaparecido a fallecido
+- [ ] Hacer la página más responsive para dispositivos móviles
+- [ ] Dockerizar la aplicación
